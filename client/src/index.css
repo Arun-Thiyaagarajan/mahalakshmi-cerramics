@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Green Shades */
+    --lt-green-1: #deebde;
+    --dk-green-1: #007600;
+    --dk-green-2: #005600;
+
+    /* Othr Colors */
+    --lt-black: #2a2a2a;
+    --grey-1: #4b4b4b;
+
+    /* Font CSS */
+    --rubik: 'Rubik', sans-serif;
+
+    /* Shadow CSS */
+    --shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --shadow-2: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --shadow-3: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    --shadow-4: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; 
+
+    /* Transition Effects */
+    --transition: background-color 0.3s linear;
+}
+
+
+/* ----------------- */
+/* Global CSS */
+/* ----------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--rubik);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--lt-green-1);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    transition: var(--transition);
+}
+
+.green-text {
+    color: var(--dk-green-1);
+}
+
+.dash {
+    width: 100px;
+    height: 4px;
+    background-color: var(--dk-green-1);
+    margin: 0.5rem auto;
+    border-radius: 3px;
+}
