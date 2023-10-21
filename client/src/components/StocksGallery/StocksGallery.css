@@ -1,0 +1,118 @@
+.stocks-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-block: 4rem;
+}
+
+.tile-card {
+    background-color: var(--lt-green-3);
+    border-radius: 5px;
+    box-shadow: var(--shadow-2);
+    transition: all var(--transition);
+    color: var(--lt-black);
+}
+
+.tile-card:hover {
+    box-shadow: var(--shadow-3);
+    transform: scale(1.02);
+}
+
+.img-container {
+    position: relative;
+}
+
+.tile-img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.tile-size {
+    position: absolute;
+    left: 0.3rem;
+    bottom: 0.55rem;
+    padding: 0.4rem;
+    color: white;
+    background-color: var(--green-2);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.tile-info {
+    padding: 0.8rem 1rem 1rem;
+    line-height: 2;
+}
+
+.tileId {
+    background: var(--green-3);
+    width: max-content;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    color: var(--dk-green-2);
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow-2);
+}
+
+.tile-design {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    /* line-height: 1.5; */
+}
+
+.cb-label {
+    width: 55px;
+    display: inline-block;
+}
+
+.card-value {
+    margin-left: 0.55rem;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.9rem;
+}
+
+.sqftRate {
+    background: var(--green-3);
+    width: max-content;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    color: var(--dk-green-2);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.more-details {
+    color: var(--dk-green-2);
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .stocks-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .stocks-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}

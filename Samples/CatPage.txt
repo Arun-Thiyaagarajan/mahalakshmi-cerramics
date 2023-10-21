@@ -1,0 +1,84 @@
+
+          
+            {/* Size */}
+            <a href='#toggle-info' className="filter-list">
+
+              <div className="filter-title-container flex-sb">
+
+                <h3 className="filter-title title-case">size</h3>
+                <i class="fa-solid fa-chevron-down" style={{color: '#1b4332;'}}></i>
+              
+              </div>
+
+              <div className="toggle-info" id='toggle-info'>
+                <div className="filter-info">
+
+                </div>
+              </div>
+            
+            </a>
+            
+            <BottomLine width='100%' ht='0.5px' />
+
+          
+            {/* Category */}
+            <a href='#toggle-info' className="filter-list">
+
+              <div className="filter-title-container flex-sb">
+
+                <h3 className="filter-title title-case">tile category</h3>
+                <i class="fa-solid fa-chevron-down" style={{color: '#1b4332;'}}></i>
+              
+              </div>
+
+              <div className="toggle-info" id='toggle-info'>
+                <div className="filter-info">
+
+                </div>
+              </div>
+            
+            </a>
+            
+            <BottomLine width='100%' ht='0.5px' />
+
+          
+            {/* Type */}
+            <a href='#toggle-info' className="filter-list">
+
+              <div className="filter-title-container flex-sb">
+
+                <h3 className="filter-title title-case">type</h3>
+                <i class="fa-solid fa-chevron-down" style={{color: '#1b4332;'}}></i>
+              
+              </div>
+
+              <div className="toggle-info" id='toggle-info'>
+                <div className="filter-info">
+
+                </div>
+              </div>
+            
+            </a>
+            
+            <BottomLine width='100%' ht='0.5px' />
+
+          
+            {/* Sanitaryware */}
+            <a href='#toggle-info' className="filter-list">
+
+              <div className="filter-title-container flex-sb">
+
+                <h3 className="filter-title title-case">sanitaryware</h3>
+                <i class="fa-solid fa-chevron-down" style={{color: '#1b4332;'}}></i>
+              
+              </div>
+
+              <div className="toggle-info" id='toggle-info'>
+                <div className="filter-info">
+
+                </div>
+              </div>
+            
+            </a>
+            
+            <BottomLine width='100%' ht='0.5px' />

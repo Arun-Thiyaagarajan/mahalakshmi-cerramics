@@ -1,0 +1,21 @@
+Auth.jsx
+
+  const handleForm = (e) => {
+    e.preventDefault();
+
+    axios
+      .post("http://localhost:5000/login", { username: username, password: password })
+      .then((response) => {
+
+        if (response.data.success) {
+            navigate("/home");
+        } else {
+            setloginStatus(response.data.message);
+        }
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+  }
+

@@ -1,0 +1,122 @@
+
+
+.search-tab {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: inset var(--shadow-4);
+    /* gap: 10px; */
+}
+
+.search-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-options {
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: all var(--transition);
+    opacity: 0;
+    cursor: pointer;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.option-toggle {
+    height: max-content;
+    padding: 0.9rem;
+    opacity: 1;
+}
+
+/* .icon-box {
+    width: 100%;
+    transition: all var(--transition);
+}
+
+.icon-box:hover {
+    box-shadow: var(--shadow-2);
+} */
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-container {
+    max-width: 100%;
+    width: 100%;
+    background-color: var(--lt-green-3);
+    border-radius: 5px;
+    box-shadow: var(--shadow-4);
+    display: flex;
+}
+
+
+.search-bar {
+    background-color: transparent;
+    color: var(--lt-black);
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    padding: 1rem 0.8rem;
+    border-radius: 5px 0 0 5px;
+    transition: box-shadow var(--transition);
+}
+
+.search-bar:focus {
+    box-shadow: var(--shadow-2);
+}
+
+.search-bar::placeholder {
+    letter-spacing: 1px;
+    color: #909090;
+}
+
+.search {
+    display: inline;
+    border: none;
+    background-color: var(--dk-green-3);
+    padding: 1rem 1.3rem;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.search-focused {
+    box-shadow: var(--shadow-2);
+    background-color: var(--lt-green-2);
+}
+
+.search:hover {
+    background-color: var(--dk-green-3);
+    /* transform: scale(1.02); */
+}
+
+@media screen and (min-width: 1440px) {
+
+    .search-tab {
+        /* width: 0%; */
+        box-shadow: none;
+    }
+
+    .search-container {
+        width: 50%;
+    }
+}
+/* 
+@media screen and (max-width: 400px) {
+    .search-container {
+        width: 100%;
+    }
+} */

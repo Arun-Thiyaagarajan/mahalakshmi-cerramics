@@ -1,0 +1,8 @@
+
+
+.add-stock-container {
+    width: 100%;
+    height: 51vh;
+    display: grid;
+    place-items: center;
+}

@@ -1,0 +1,123 @@
+.filter-page-container {
+    max-width: 100%;
+    margin: 2.4rem auto;
+    height: max-content;
+    /* padding: 0 1%; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filter-list,
+.toggle-info,
+.filter-title-container {
+    width: 100%;
+}
+
+.filter-list {
+    padding: 1.5rem 1.2rem;
+    box-shadow: var(--shadow-2);
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--lt-green-3);
+    border-left: 5px solid var(--dk-green-2);
+    /* transition: all var(--transition-2); */
+}
+
+.without-tap-highlight{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    touch-action: manipulation;
+}
+
+.toggle-info,
+.filter-title-container, 
+.filter-title {
+    transition: all 0.3s linear;
+}
+
+.filter-title-container.active {
+    margin-bottom: 1.5rem;
+    background-color: var(--dk-green-3);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.filter-title.active {
+    font-size: 1.3rem;
+    color: var(--lt-green-3);
+}
+
+.toggle {
+    color: var(--dk-green-2) !important;
+    background-color: var(--lt-green-3) !important;
+    font-size: 1.8rem !important;
+    transform: rotate(180deg);
+}
+
+.toggle:hover {
+    transform: scale(1.03) rotate(180deg);
+}
+
+.toggle-icon {
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    color: var(--dk-green-3);
+    cursor: pointer;
+    /* optional - last item */
+    align-self: flex-start;
+    /* min-width: 2rem; */
+    transition: all 0.3s linear;
+}
+
+.filter-info {
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: all var(--transition-2);
+    border-radius: 5px;
+    box-shadow: inset var(--shadow-2);
+}
+
+.filter-title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--lt-black);
+}
+
+.filter-items {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all var(--transition-2);
+}
+
+.filter-items:hover {
+    box-shadow: var(--shadow-4);
+    transform: scale(1.02);
+    background-color: #d8efd8;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .filter-page-container {
+        width: 70%;
+    }
+    
+    .filter-list {
+        padding: 2rem 1rem;
+    }
+    
+    .filter-items:hover {
+        box-shadow: var(--shadow-4);
+        transform: scale(1.01);
+    }
+    .toggle:hover {
+        transform: scale(1.02) rotate(360deg);
+    }
+}
+

@@ -3,12 +3,26 @@
 :root {
     /* Green Shades */
     --lt-green-1: #deebde;
+    --lt-green-2: #2d6a4f;
+    --lt-green-3: #e2f1e2;
+    --lt-green-4: #B7E4C7;
     --dk-green-1: #007600;
     --dk-green-2: #005600;
+    --dk-green-3: #1b4332;
+    --s: #f0f0f0;
+    /* Green Shades Less Opacity */
+    --green-1: #1b4332c7;
+    --green-2: #005600bd;
+    --green-3: #56c7569a;
 
     /* Othr Colors */
     --lt-black: #2a2a2a;
     --grey-1: #4b4b4b;
+    --red: #cc0000;
+    --dk-red-1: #560000;
+
+    /* Less Opacity Colors */
+    --red-1: #c756569a;
 
     /* Font CSS */
     --rubik: 'Rubik', sans-serif;
@@ -17,10 +31,15 @@
     --shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     --shadow-2: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     --shadow-3: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    --shadow-4: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; 
+    --shadow-4: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    --shadow-5: 0px 5px 10px 2px rgba(8, 18, 13, 0.2);
+
+    --inset-shadow-1: inset 0px 0px 30px rgba(27, 67, 50, 0.4);
+    --inset-shadow-2: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 
     /* Transition Effects */
-    --transition: background-color 0.3s linear;
+    --transition: 0.3s linear;
+    --transition-2: 0.3s ease-in-out;
 }
 
 
@@ -45,7 +64,20 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
+
+main {
+    min-height: 51vh;
+}
+
+a:active,
+a:focus {
+    outline: none;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 li {
     list-style: none;
@@ -55,9 +87,42 @@ button {
     transition: var(--transition);
 }
 
+.title-case {
+    text-transform: capitalize;
+}
+
+/* padding inline */
+.pd-inline {
+    padding-inline: 2rem;
+}
+
+.required {
+    color: var(--red);
+}
+
 .green-text {
     color: var(--dk-green-1);
 }
+
+.m-blk {
+    margin-block: 1rem;
+}
+
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+/* ----------------- */
+/* Dash Component */
+/* ----------------- */
 
 .dash {
     width: 100px;
@@ -65,4 +130,120 @@ button {
     background-color: var(--dk-green-1);
     margin: 0.5rem auto;
     border-radius: 3px;
+}
+
+/* ----------------- */
+/* Title Component */
+/* ----------------- */
+
+.section-title {
+    color: var(--lt-black);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+/* ------------------------- */
+/* Brand Abstract Component */
+/* -------------------------- */
+
+.brand-o-circle {
+    position: absolute;
+    bottom: -2.5rem;
+    right: 1rem;
+    background-color: var(--lt-green-3);
+    box-shadow: var(--shadow-3);
+    box-shadow: var(--inset-shadow-1);
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.brand-i-circle {
+    background-color: var(--lt-green-1);
+    box-shadow: var(--shadow-3);
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    animation: rotate 15s linear infinite;
+}
+
+.brand-img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    font-size: 0.8rem;
+}
+
+/* ------------------------- */
+/* Bottom-Line Component */
+/* -------------------------- */
+
+.bottom-line {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #ababab;
+}
+
+
+/* ------------------------- */
+/* Dot Component */
+/* -------------------------- */
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #33ce21;
+    display: grid;
+    place-content: center;
+    /* border: 1px solid var(--lt-green-3); */
+}
+
+.pulse-animation {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #33ce21;
+    animation: pulse 1s linear infinite;
+}
+
+
+@media screen and (min-width: 767px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+    .pd-inline {
+        padding-inline: 4rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .pd-inline {
+        padding-inline: 5rem;
+    }
+}
+
+
+
+/* ----------------- */
+/* Animations */
+/* ----------------- */
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
